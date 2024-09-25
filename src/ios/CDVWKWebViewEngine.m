@@ -300,7 +300,8 @@
         [self setKeyboardAppearanceDark];
     }
     
-    wkWebView.inspectable = [settings cordovaBoolSettingForKey:@"InspectableWebview" defaultValue:allowWebviewInspectionDefault];
+    wkWebView.inspectable = [settings cordovaBoolSettingForKey:@"InspectableWebview" defaultValue:NO];
+    
     [self updateSettings:settings];
 
     // check if content thread has died on resume
